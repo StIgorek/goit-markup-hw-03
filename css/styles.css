@@ -35,6 +35,11 @@ text-decoration: none;
 }
 
 /*header*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
 color: var(--primary-brand-color);
 font-family: Raleway, sans-serif;
@@ -52,6 +57,23 @@ font-family: Raleway, sans-serif;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.site-nav {
+  display: flex;
+  margin-left: 149px;
+  padding: 0;
+}
+.site-nav .link,
+.contact .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.site-nav .item:not(:last-child) {
+margin-right: 40px;
+width: auto;
+height: 24px;
 }
 
 .nav .link {
@@ -72,7 +94,14 @@ font-family: Raleway, sans-serif;
 .contact .link:focus {
   color: var(--primary-brand-color);
 }
-
+.contact {
+  display: flex;
+  margin-left: 149px;
+  padding: 0;
+}
+.contact .item+ .item {
+  margin-left: 149px;
+}
 /* Main section*/
 .main-section {
   background-color: var(--title-text-color);
@@ -169,6 +198,31 @@ main-button:active {
   font-size: inherit;
   letter-spacing: inherit;
 }
+
+/* Flex */
+h1, h2, h3, h4, h5, h6, p, ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+.container {
+  display: flex;
+  width: 1158px;
+  height: 72px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  outline: 1px solid tomato;
+}
+/*.container .contact {
+  width: auto;
+  height: 24px;
+}*/
+
+.page-header {
+  background-color: var(--primary-bg-color);
+}
+
 
 /* Цвет основного текста Roboto 400 #434455*/
 /* Цвет заголовка Roboto 600 #2E2F42*/
