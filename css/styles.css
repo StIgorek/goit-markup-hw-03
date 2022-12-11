@@ -189,7 +189,6 @@ padding-top: 120px;
 .advantages {
   display: flex;
   padding-left: 0;
-  padding-bottom: 120px;
 }
 
 .advantages-item {
@@ -379,7 +378,7 @@ align-items: center;
 .footer-text{
   display: block;
   width: 264px;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .footer .container {
   flex-direction: column;
